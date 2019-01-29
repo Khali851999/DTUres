@@ -6,10 +6,105 @@
     android:layout_height="match_parent"
     tools:context=".mainpage"
     android:orientation="vertical"
-    android:gravity="center">
-    <ImageView
-        android:id="@+id/i1"
-        android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#FF0026">
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher_background"/>
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="vv"
+        android:longClickable="true"
+        android:id="@+id/ll1"
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:id="@+id/i1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="IMAGE"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:id="@+id/t1"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="vv"
+        android:id="@+id/ll2"
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:id="@+id/i2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="IMAGE"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:id="@+id/t2"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="vv"
+            android:id="@+id/ll3"
+            android:layout_margin="15dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+                android:id="@+id/i3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="IMAGE"
+                android:layout_gravity="center"
+                android:textColor="#FFFFFF"
+                android:id="@+id/t3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="vv"
+            android:id="@+id/ll4"
+            android:layout_margin="15dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo"
+
+                android:id="@+id/i4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="IMAGE"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:id="@+id/t4"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
