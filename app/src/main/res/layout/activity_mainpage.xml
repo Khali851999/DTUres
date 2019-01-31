@@ -7,11 +7,14 @@
     tools:context=".mainpage"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="#FF0026">
+    android:background="#FF0026"
+    android:weightSum="100">
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="45"
+        android:gravity="bottom">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,17 +22,18 @@
         android:onClick="vv"
         android:longClickable="true"
         android:id="@+id/ll1"
-        android:layout_margin="15dp">
+        android:layout_margin="15dp"
+        android:elevation="50dp">
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/logo"
-            android:id="@+id/i1"/>
+            android:src="@drawable/books"
+            android:id="@+id/i1" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="IMAGE"
+            android:text="BOOKS"
             android:layout_gravity="center"
             android:textColor="#FFFFFF"
             android:id="@+id/t1"/>
@@ -38,19 +42,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:onClick="vv"
+        android:onClick="vv2"
         android:id="@+id/ll2"
-        android:layout_margin="15dp">
+        android:layout_margin="15dp"
+        android:elevation="50dp">
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/papers"
             android:id="@+id/i2"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="IMAGE"
+            android:text="PAPERS"
             android:textColor="#FFFFFF"
             android:layout_gravity="center"
             android:id="@+id/t2"/>
@@ -58,25 +63,28 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="45"
+        android:gravity="top">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:onClick="vv"
+            android:onClick="vv3"
             android:id="@+id/ll3"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            android:elevation="50dp">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/logo"
+                android:src="@drawable/practicals"
                 android:id="@+id/i3"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="IMAGE"
+                android:text="PRACTICALS"
                 android:layout_gravity="center"
                 android:textColor="#FFFFFF"
                 android:id="@+id/t3"/>
@@ -85,26 +93,70 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:onClick="vv"
+            android:onClick="vv4"
             android:id="@+id/ll4"
-            android:layout_margin="15dp">
+            android:layout_margin="15dp"
+            android:elevation="50dp">
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/logo"
+                android:src="@drawable/notes"
 
                 android:id="@+id/i4"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="IMAGE"
+                android:text="NOTES"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center"
                 android:id="@+id/t4"/>
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/ll5"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:onClick="b1"
+            android:src="@drawable/dce"/>
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:onClick="b2"
+            android:src="@drawable/maps"/>
+
+        <ImageView
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:onClick="b3"
+            android:src="@drawable/communicate"/>
+
+        <ImageView
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_weight="25"
+            android:layout_height="wrap_content"
+            android:onClick="b4"
+            android:src="@drawable/icon"/>
+    </LinearLayout>
 
 
 </LinearLayout>
